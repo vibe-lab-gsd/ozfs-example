@@ -1,0 +1,20 @@
+{
+    "bldg_info": {
+        "stories": 3,
+        "height": 45,
+        "width": 35,
+        "depth": 40,
+        "heght_eave": 45,
+        "type": "2_family",
+        "gross_fl_area": 3200
+    },
+    "unit_info": [
+        {
+            "fl_area": 1563,
+            "bedrooms": 3,
+            "level": 1,
+            "floors": 3,
+            "qty": 2
+        }
+    ]
+}

@@ -1,0 +1,120 @@
+---
+title: "Open Zoning"
+subtitle: "Software and data standards for identifying housing capacity"
+execute: 
+  echo: false
+  warning: false
+format:
+  docx:
+    reference-doc: custom-reference-doc.docx
+editor: visual
+---
+
+# Abstract
+
+100 words
+
+```{r}
+library(tidyverse)
+library(tigris)
+library(here)
+library(sf)
+library(maptiles)
+library(tidyterra)
+```
+
+```{r, message=FALSE, results='hide'}
+
+city_list <- c("Dallas", 
+               "Irving", 
+               "Garland", 
+               "Rowlett", 
+               "University Park",
+               "Highland Park",
+               "Cockrell Hill")
+
+cities <- places(state = "TX") |>
+  filter(NAME %in% city_list,
+         progress_bar = FALSE) |>
+  st_transform("WGS84")
+```
+
+# Introduction
+
+Describe the need
+
+Describe prior work
+
+Describe challenges
+
+Usefulness and significance
+
+# Data structures
+
+Describe each of the data structures
+
+## Zoning constraints
+
+How zoning constraints are encoded
+
+## Parcel geometry
+
+How parcel geometry is encoded.
+
+```{r}
+
+parcels <- here("data",
+                "parcels",
+                "")
+
+```
+
+## Building characteristics
+
+Building characteristics are stored in a
+
+# Analysis methods
+
+This part gets into how the analysis works.
+
+# Illustrative Example
+
+To illustrate the methods above, we define a four-unit residential building and identify all parcels across two adjacent municipalities in Texas (Dallas and Irving) where that building would be compliant with existing zoning regulations. @fig-boundary-map shows the extents of these two cities.
+
+```{r, message=FALSE, results='hide'}
+
+cities_bbox <- st_bbox(cities)
+
+base_map <- get_tiles(cities,
+                      provider = "Stadia.Stamen.TonerLite",
+                      zoom = 11,
+                      crop = TRUE)
+```
+
+```{r}
+#| label: fig-boundary-map
+#| fig-cap: "Boundaries of municipalites included in illustrative example"
+
+ggplot(cities) +
+  geom_spatraster_rgb(data = base_map) +
+  geom_sf(aes(fill = NAME),
+          alpha = 0.4) +
+  scale_fill_brewer(palette = "Set1",
+                    name = "City") +
+  annotate(geom = "text",
+           x = cities_bbox["xmin"], y = cities_bbox["ymin"],
+           hjust = 0,
+           size = 2.5,
+           label = get_credit("Stadia.Stamen.TonerLite")) +
+  theme_void() 
+```
+
+# Opportunities for future development
+
+Need to deal with parking.
+
+Directly calculating building attributes from building geometry
+
+# Conclusion
+
+Return to usefulness and use cases.

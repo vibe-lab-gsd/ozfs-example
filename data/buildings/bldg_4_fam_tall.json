@@ -1,0 +1,41 @@
+{
+    "bldg_info": {
+        "stories": 3,
+        "height": 40,
+        "width": 32,
+        "depth": 60,
+        "heght_eave": 40,
+        "type": "4_family",
+        "gross_fl_area": 5000
+    },
+    "unit_info": [
+        {
+            "fl_area": 1178,
+            "bedrooms": 2,
+            "level": -1,
+            "floors": 1,
+            "qty": 1
+        },
+        {
+            "fl_area": 1178,
+            "bedrooms": 2,
+            "level": 1,
+            "floors": 1,
+            "qty": 1
+        },
+        {
+            "fl_area": 1178,
+            "bedrooms": 2,
+            "level": 2,
+            "floors": 1,
+            "qty": 1
+        },
+        {
+            "fl_area": 1178,
+            "bedrooms": 2,
+            "level": 3,
+            "floors": 1,
+            "qty": 1
+        }
+    ]
+}

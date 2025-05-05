@@ -1,0 +1,104 @@
+{
+    "bldg_info": {
+        "stories": 4,
+        "height": 60,
+        "width": 65,
+        "depth": 76,
+        "heght_eave": 60,
+        "type": "4_family",
+        "gross_fl_area": 13200
+    },
+    "unit_info": [
+        {
+            "fl_area": 1138,
+            "bedrooms": 2,
+            "level": 2,
+            "floors": 1,
+            "qty": 1
+        },{
+            "fl_area": 716,
+            "bedrooms": 1,
+            "level": 2,
+            "floors": 1,
+            "qty": 1
+        },
+        {
+            "fl_area": 971,
+            "bedrooms": 2,
+            "level": 2,
+            "floors": 1,
+            "qty": 1
+        },
+        {
+            "fl_area": 1223,
+            "bedrooms": 2,
+            "level": 2,
+            "floors": 1,
+            "qty": 1
+        },
+        {
+            "fl_area": 990,
+            "bedrooms": 2,
+            "level": 3,
+            "floors": 1,
+            "qty": 1
+        },
+        {
+            "fl_area": 863,
+            "bedrooms": 2,
+            "level": 3,
+            "floors": 1,
+            "qty": 1
+        },
+        {
+            "fl_area": 951,
+            "bedrooms": 2,
+            "level": 3,
+            "floors": 1,
+            "qty": 1
+        },
+        {
+            "fl_area": 1244,
+            "bedrooms": 2,
+            "level": 3,
+            "floors": 1,
+            "qty": 1
+        },
+        {
+            "fl_area": 1034,
+            "bedrooms": 2,
+            "level": 4,
+            "floors": 1,
+            "qty": 1
+        },
+        {
+            "fl_area": 822,
+            "bedrooms": 2,
+            "level": 4,
+            "floors": 1,
+            "qty": 1
+        },
+        {
+            "fl_area": 1062,
+            "bedrooms": 2,
+            "level": 4,
+            "floors": 1,
+            "qty": 1
+        },
+        {
+            "fl_area": 1133,
+            "bedrooms": 2,
+            "level": 4,
+            "floors": 1,
+            "qty": 1
+        }
+    ],
+    "parking_info": [
+        {
+            "fl_area": 4940,
+            "stalls": 8,
+            "level": 1,
+            "type": "enclosed",
+            "entry": "front"
+        }]
+}

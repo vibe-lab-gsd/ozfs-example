@@ -1,0 +1,46 @@
+{
+    "bldg_info": {
+        "stories": 3,
+        "height": 38,
+        "width": 52,
+        "depth": 48,
+        "heght_eave": 28,
+        "type": "4_family",
+        "gross_fl_area": 4600
+    },
+    "unit_info": [
+        {
+            "fl_area": 1108,
+            "bedrooms": 3,
+            "level": 1,
+            "floors": 3,
+            "qty": 4
+        }
+    ],
+    "parking_info": [
+        {
+            "fl_area": 200,
+            "stalls": 1,
+            "level": -1,
+            "entry": "side"
+        },
+        {
+            "fl_area": 200,
+            "stalls": 1,
+            "level": -1,
+            "entry": "side"
+        },
+        {
+            "fl_area": 200,
+            "stalls": 1,
+            "level": -1,
+            "entry": "rear"
+        },
+        {
+            "fl_area": 200,
+            "stalls": 1,
+            "level": -1,
+            "entry": "rear"
+        }
+    ]
+}
